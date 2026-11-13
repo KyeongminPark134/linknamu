@@ -1,0 +1,11 @@
+node_modules
+.next
+out
+next-env.d.ts
+*.tsbuildinfo
+
+# 환경변수 (절대 commit하지 않음)
+.env*.local
+.env
+
+.vercel
