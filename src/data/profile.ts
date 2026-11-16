@@ -2,6 +2,8 @@ export type LinkItem = {
   id: string;
   title: string;
   url: string;
+  /** 링크 제목 앞에 표시할 이모지 */
+  emoji?: string;
 };
 
 export type Profile = {
@@ -12,13 +14,14 @@ export type Profile = {
   links: LinkItem[];
 };
 
-// TODO: 본인 정보와 링크로 바꿔 주세요.
 export const profile: Profile = {
   name: "박경민",
-  bio: "에이전틱 코딩 입문자",
+  bio: "왕초보 개발자 | 클로드 코드를 활용한 바이브 코딩에 관심이 많아요",
+  image: "/profile.jpg",
   links: [
-    { id: "instagram", title: "Instagram", url: "https://instagram.com" },
-    { id: "blog", title: "블로그", url: "https://blog.naver.com" },
-    { id: "github", title: "GitHub", url: "https://github.com" },
+    { id: "github", title: "GitHub", url: "https://github.com/KyeongminPark134", emoji: "😺" },
+    // TODO: 실제 블로그 주소로 바꿔 주세요.
+    { id: "blog", title: "블로그", url: "https://blog.naver.com", emoji: "✍️" },
+    { id: "email", title: "이메일", url: "mailto:spencer04@snu.ac.kr", emoji: "🌐" },
   ],
 };
